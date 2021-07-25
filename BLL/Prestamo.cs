@@ -29,8 +29,8 @@ namespace BLL
         public void CantidadDeDiasParaVencer()
         {
 
-            var diasVencidos = "";
-            diasVencidos = int.TryParse(this.FechaDevolucion.ToString()) - this.FechaPrestamo.ToString());
+           // var diasVencidos = "";
+           // diasVencidos = int.TryParse(this.FechaDevolucion.ToString()) - this.FechaPrestamo.ToString());
             
 
 
