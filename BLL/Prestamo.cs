@@ -31,6 +31,7 @@ namespace BLL
 
            // var diasVencidos = "";
            // diasVencidos = int.TryParse(this.FechaDevolucion.ToString()) - this.FechaPrestamo.ToString());
+           // no se como hacer para que me muestre los dias que quedan de prestamo
             
 
 
