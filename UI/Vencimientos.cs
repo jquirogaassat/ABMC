@@ -18,8 +18,10 @@ namespace UI
             InitializeComponent();
         }
 
+        public BLL.Prestamo prestamo1;
         private void Vencimientos_Load(object sender, EventArgs e)
         {
+            prestamo1 = new BLL.Prestamo(); // instancio
             // actList();
             cargarListPmo();
         }
@@ -38,11 +40,11 @@ namespace UI
             //var item = list_vencimientos.SelectedItem.ToString();
            
 
-            BLL.Prestamo prestamo1 = new BLL.Prestamo(); // instancio
+           // BLL.Prestamo prestamo1 = new BLL.Prestamo(); // instancio
             prestamo1.PrestamoVencidoEvent += Prestamo1_PrestamoVencidoEvent; // funcion con nombre
 
-            prestamo1.PrestamoVencidoEvent += delegate (int m)  
-            { MessageBox.Show($"Evento disparado con funcion anonima {m}"); };
+           // prestamo1.PrestamoVencidoEvent += delegate (int m)  
+           // { MessageBox.Show($"Evento disparado con funcion anonima {m}"); };
 
             prestamo1.CantidadDeDiasParaVencer();
 
