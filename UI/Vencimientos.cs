@@ -18,7 +18,7 @@ namespace UI
             InitializeComponent();
         }
 
-        public BLL.Prestamo prestamo1;
+        public BLL.Prestamo prestamo1;// declaro pmo
         private void Vencimientos_Load(object sender, EventArgs e)
         {
             prestamo1 = new BLL.Prestamo(); // instancio
